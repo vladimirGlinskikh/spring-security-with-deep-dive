@@ -10,6 +10,3 @@ spring:
 
 server:
   port: 5151
-
-secret:
-  key: secret
