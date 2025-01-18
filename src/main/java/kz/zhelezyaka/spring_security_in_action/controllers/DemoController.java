@@ -1,4 +1,4 @@
-package kz.zhelezyaka.spring_security_with_deep_dive.controllers;
+package kz.zhelezyaka.spring_security_in_action.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

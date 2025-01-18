@@ -1,4 +1,4 @@
-package kz.zhelezyaka.spring_security_with_deep_dive.providers;
+package kz.zhelezyaka.spring_security_in_action.providers;
 
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
 import org.springframework.security.authentication.AuthenticationProvider;

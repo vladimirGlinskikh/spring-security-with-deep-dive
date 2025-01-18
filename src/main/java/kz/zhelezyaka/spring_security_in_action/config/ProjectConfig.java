@@ -1,6 +1,6 @@
-package kz.zhelezyaka.spring_security_with_deep_dive.config;
+package kz.zhelezyaka.spring_security_in_action.config;
 
-import kz.zhelezyaka.spring_security_with_deep_dive.providers.CustomAuthenticationProvider;
+import kz.zhelezyaka.spring_security_in_action.providers.CustomAuthenticationProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
