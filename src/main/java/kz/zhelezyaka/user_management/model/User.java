@@ -1,30 +1,37 @@
-package kz.zhelezyaka.user_management;
+package kz.zhelezyaka.user_management.model;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.List;
 
-@RequiredArgsConstructor
-public class SecurityUser implements UserDetails {
 
-    private final User user;
+public class User implements UserDetails {
 
-    @Override
-    public String getUsername() {
-        return user.getUsername();
-    }
+    private String username;
+    private String password;
+    private String authority;
 
-    @Override
-    public String getPassword() {
-        return user.getPassword();
+    public User(String username, String password, String authority) {
+        this.username = username;
+        this.password = password;
+        this.authority = authority;
     }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(() -> user.getAuthority());
+        return List.of(() -> authority);
+    }
+
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String getUsername() {
+        return username;
     }
 
     @Override

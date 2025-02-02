@@ -9,5 +9,5 @@ spring:
     show-sql: true
 
 server:
-  port: 5151
+  port: 8181
 
